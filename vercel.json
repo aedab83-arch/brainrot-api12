@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/add-server", "dest": "/api/add-server.js" },
+    { "src": "/get-server", "dest": "/api/get-server.js" },
+    { "src": "/record-hop", "dest": "/api/record-hop.js" },
+    { "src": "/scanner-register", "dest": "/api/scanner-register.js" },
+    { "src": "/scanner-list", "dest": "/api/scanner-list.js" }
+  ]
+}
